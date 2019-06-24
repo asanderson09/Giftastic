@@ -4,7 +4,7 @@ $(document).ready(function () {
 // searchArr, 'searchButton', '#buttonArea'
 });
 
-var searchArr = ['Dog', 'Cat', 'Bird'];
+var searchArr = ['Code', 'Is', 'Life'];
 // searchArr, classToAdd, areaToAddTo
 function displayButtons() {
 
@@ -23,8 +23,9 @@ function displayButtons() {
         $('#buttonArea').append(a);
     }
 }
-
-$(document).on('click', '.searchButton', function () {
+// click event listener that applies to all elements with a class of gif-btn
+$(document).on('click', '.gif-btn', function () {
+    $('#searches').empty();
     event.preventDefault();
     var type = $(this).data('type');
     console.log(type);
@@ -66,7 +67,7 @@ $('#addGif').on('click', function () {
           
 
 })
-console.log(searchArr)
+// console.log(searchArr)
 
 
 // searchArr, 'searchButton', '#buttonArea'
