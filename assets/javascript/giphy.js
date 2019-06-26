@@ -34,7 +34,7 @@ $(document).on('click', '.gif-btn', function () {
     // my APIKey for giphy.com
     var APIKey = 'w7h5RI5lk9DoYlu3bdcQyxHopOWWdxhz'
     
-    var queryURL = `http://api.giphy.com/v1/gifs/search?q=` + type + `&api_key=${APIKey}&limit=20`
+    var queryURL = `https://api.giphy.com/v1/gifs/search?q=` + type + `&api_key=${APIKey}&limit=20`
     
     // ajax call where all the magic happens(asynchronously to be specific) 
 
